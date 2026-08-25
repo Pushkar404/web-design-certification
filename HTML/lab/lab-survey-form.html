@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ipsa
+        debitis quia, ab reprehenderit corrupti tempore est vitae praesentium
+        optio?
+      </p>
+    </header>
+    <main>
+      <form action="" id="survey-form">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label id="name-label" for="name"> Name:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            required
+            placeholder="Ram Shyam"
+          />
+          <br />
+          <label id="email-label" for="email"> Email:</label>
+          <input
+            required
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@mail.com"
+          />
+          <br />
+          <label id="number-label" for="number"> Number:</label>
+          <input
+            required
+            type="number"
+            id="number"
+            name="number"
+            min="18"
+            max="100"
+            placeholder="67"
+          />
+        </fieldset>
+        <br />
+
+        <fieldset>
+          <legend>Share your opinions</legend>
+          <label for="dropdown"> Do you love mangoes ?</label>
+          <select name="dropdown" id="dropdown">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </fieldset>
+        <br />
+
+        <fieldset>
+          <legend>Gender:</legend>
+
+          <label for="male">Male:</label>
+          <input type="radio" name="gender" id="male" value="Male" />
+          <label for="female">female:</label>
+          <input type="radio" name="gender" id="female" value="Female" />
+        </fieldset>
+        <fieldset>
+          <legend>Hobbies</legend>
+          <input type="checkbox" name="hobby" id="coding" value="coding" />
+          <label for="coding">Coding</label>
+          <input
+            type="checkbox"
+            name="hobby"
+            id="reading books"
+            value="reading books"
+          />
+          <label for="reading books">reading books</label>
+          <input type="checkbox" name="hobby" id="singing" value="singing" />
+          <label for="singing">singing</label>
+        </fieldset>
+
+        <fieldset>
+          <label for="suggestions">Any suggestions ?</label>
+          <input type="textarea" name="suggestions" id="suggestions" />
+        </fieldset>
+        <br />
+        <input type="submit" id="submit" />
+      </form>
+    </main>
+  </body>
+</html>
